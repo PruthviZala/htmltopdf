@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Convert Html_Into_Pdf</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+</head>
+
+<body class="bg-primary">
+
+    <div class="container">
+        <div class="card border-success mb-3  mx-auto" style="width:fit-content;height:fit-content; margin-top: 20px;">
+            <div class="card-header">Fill Some Data For PDF</div>
+            <div class="card-body">
+                <form action="/generatepdf" method="POST">
+                    <!-- <textarea name="article" id="article" cols="100" rows="15" style="word-wrap:break-word;"></textarea> -->
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="orgname" name="orgName" placeholder="Organization Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control item" id="phone" name="mobile" placeholder="Mobile">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control item" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control item" id="address" name="address" placeholder="Email">
+                    </div>
+                    <center><button type="submit" class="btn btn-primary">Generate PDF</button></center>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
