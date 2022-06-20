@@ -1,42 +1,50 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Convert Html_Into_Pdf</title>
-    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.css">
-    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <meta charset="utf-8">
+    <title>VastraApp</title>
+    <link href="style/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body class="bg-primary">
-
-    <div class="container">
-        <div class="card border-success mb-3  mx-auto" style="width:fit-content;height:fit-content; margin-top: 20px;">
-            <div class="card-header">Fill Some Data For PDF</div>
-            <div class="card-body">
-                <form action="/generatepdf" method="POST">
-                    <!-- <textarea name="article" id="article" cols="100" rows="15" style="word-wrap:break-word;"></textarea> -->
-                    <div class="form-group">
-                        <input type="text" class="form-control item" id="orgname" name="orgName" placeholder="Organization Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control item" id="name" name="name" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="number" class="form-control item" id="phone" name="mobile" placeholder="Mobile">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control item" id="email" name="email" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control item" id="address" name="address" placeholder="Email">
-                    </div>
-                    <center><button type="submit" class="btn btn-primary">Generate PDF</button></center>
-                </form>
+<body>
+    <div class="registration-form">
+        <form action="/generatepdf" method="POST">
+            <div class="form-icon">
+                <span><img src="images/vastra-logo.svg" height="70%" width="70%" ></img></span>
             </div>
-        </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="orgname" name="orgname" placeholder="Organization Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="name" name="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control item" id="mobile" name="mobile" placeholder="Phone">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control item" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="address" name="address" placeholder="Address">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-block create-account">Generate Visiting Card</button>
+            </div>
+            <!-- <a href="tel:9898812088">9898812088</a> -->
+
+        </form>
+        <!-- <div class="social-media">
+            <div class="social-icons">
+                <a href="#"><i class="icon-social-facebook" title="Facebook"></i></a>
+                <a href="#"><i class="icon-social-google" title="Google"></i></a>
+                <a href="#"><i class="icon-social-twitter" title="Twitter"></i></a>
+            </div>
+        </div> -->
     </div>
+
 </body>
 
 </html>
