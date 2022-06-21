@@ -4,34 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Visiting Cart</title>
+    <title>Visiting Card</title>
 </head>
 
 <body>
     <p>
-        <div style="margin-left:40%;font-size:small;">
-            <h3>Visiting Card</h3>
+        <div style="text-align:center ;font-size:small;">
+            <p style="font-size: 40px;">
+                Visiting Card
+            </p>
         </div>
-        <P style="margin:0px 15px 0px 15px;font-family:Times New Roman;font-weight:lighter;font-size:medium;">
-            <%= orgName%>
-        </P>
+        <table style="font-family:Times New Roman;font-weight:lighter;font-size:30px;">
+            <tr>
+                <th>Organization Name</th>
+                <th>&nbsp;:&nbsp;</th>
+                <td>
+                    <%= orgName%>
+                </td>
+            </tr>
+            <!-- <p style="font-family:Times New Roman;font-weight:lighter;font-size:35px;">Organization Name :
+                    <%= orgName%>
+                </p> -->
+            <tr>
+                <th>Name</th>
+                <th>&nbsp;:&nbsp;</th>
+                <td>
+                    <%= name%>
+                </td>
+            </tr>
+            <!-- <p style="font-family:Times New Roman;font-weight:lighter;font-size:35px;"> Name :
+                <%= name%>
+            </p> -->
 
-        <P style="margin:0px 15px 0px 15px;font-family:Times New Roman;font-weight:lighter;font-size:medium;">
-            <%= name%>
-        </P>
-        <P style="margin:0px 15px 0px 15px;font-family:Times New Roman;font-weight:lighter;font-size:medium;">
-            <%= mobile%>
-        </P>
-        <P style="margin:0px 15px 0px 15px;font-family:Times New Roman;font-weight:lighter;font-size:medium;">
-            <%= email%>
-        </P>
-        <P style="margin:0px 15px 0px 15px;font-family:Times New Roman;font-weight:lighter;font-size:medium;">
-            <%= address%>
-        </P>
+            <tr>
+                <th>Mobile</th>
+                <th>&nbsp;:&nbsp;</th>
+                <td>
+                    <%= mobile%>
+                </td>
+            </tr>
+            <!-- <p style="font-family:Times New Roman;font-weight:lighter;font-size:35px;">Mobile :
+                <%= mobile%>
+            </p> -->
 
-        <!-- <p><a href="tel:+919898812088">+99898812088</a></p> -->
+            <tr>
+                <th>Email</th>
+                <th>&nbsp;:&nbsp;</th>
+                <td>
+                    <%= email%>
+                </td>
+            </tr>
+            <!-- <!-- <p style="font-family:Times New Roman;font-weight:lighter;font-size:35px;">Email :
+                <%= email%>
+            </p> -->
 
-        </div>
+            <tr>
+                <th>Address</th>
+                <th>&nbsp;:&nbsp;</th>
+                <td>
+                    <%= address%>
+                </td>
+            </tr>
+            <!-- <p style="font-family:Times New Roman;font-weight:lighter;font-size:35px;">Address :
+                <%= address%> -->
+    </p>
+    </table>
+
+
+    <!-- <p><a href="tel:+919898812088">+99898812088</a></p> -->
+
+    </div>
 </body>
 
 </html>
