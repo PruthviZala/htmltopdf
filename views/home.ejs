@@ -7,6 +7,15 @@
     <link href="style/simple-line-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
+    <style>
+        input[type=text] {
+            text-transform: capitalize;
+        }
+        
+        input[type=email] {
+            text-transform: lowercase;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,7 +31,7 @@
                 <input type="text" class="form-control item" id="name" name="name" placeholder="Name">
             </div>
             <div class="form-group">
-                <input type="number" class="form-control item" id="mobile" name="mobile" placeholder="Phone">
+                <input type="number" class="form-control item" id="mobile" name="mobile" maxlength="12" placeholder="Phone" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
             </div>
             <div class="form-group">
                 <input type="email" class="form-control item" id="email" name="email" placeholder="Email">
@@ -30,6 +39,9 @@
             <div class="form-group">
                 <input type="text" class="form-control item" id="address" name="address" placeholder="Address">
             </div>
+            <!-- <div class="form-group">
+                <textarea class="form-control item" id="address" name="address" placeholder="Address"></textarea>
+            </div> -->
             <div class="form-group">
                 <button type="submit" class="btn btn-block create-account">Generate Visiting Card</button>
             </div>
