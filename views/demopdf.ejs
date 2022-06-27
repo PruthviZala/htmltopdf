@@ -14,7 +14,7 @@
                 Visiting Card
             </p>
         </div>
-        <table style="font-family:Times New Roman;font-weight:lighter;font-size:larger;">
+        <table style="font-family:Times New Roman;font-weight:lighter;font-size:large;">
             <tr>
                 <th>Organization Name</th>
                 <th>&nbsp;:&nbsp;</th>
@@ -40,8 +40,16 @@
                 <th>Mobile</th>
                 <th>&nbsp;:&nbsp;</th>
                 <td>
-                    <%= mobile%>
+                    <a href="tel:+91<%= mobile%>">
+                        <%= mobile%>
+                    </a>
+
                 </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+                <td><a href="https://api.whatsapp.com/send?phone=91<%= mobile%>">Link fo Whatsapp</a></td>
             </tr>
             <!-- <p style="font-family:Times New Roman;font-weight:lighter;font-size:35px;">Mobile :
                 <%= mobile%>
@@ -51,10 +59,12 @@
                 <th>Email</th>
                 <th>&nbsp;:&nbsp;</th>
                 <td>
-                    <%= email%>
+                    <a href="mailto:<%= email%>">
+                        <%= email%>
+                    </a>
                 </td>
             </tr>
-            <!-- <p style="font-family:Times New Roman;font-weight:lighter;font-size:35px;">Email :
+            <!-- <!-- <p style="font-family:Times New Roman;font-weight:lighter;font-size:35px;">Email :
                 <%= email%>
             </p> -->
 
@@ -65,16 +75,19 @@
                     <%= address%>
                 </td>
             </tr>
+            <!-- <tr>
+                <th>Mobile</th>
+                <th>&nbsp;:&nbsp;</th>
+                <th>
+                    <a href="tel:">
+
+                    </a>
+                    </td>
+            </tr> -->
             <!-- <p style="font-family:Times New Roman;font-weight:lighter;font-size:35px;">Address :
                 <%= address%> -->
     </p>
     </table>
-
-    <p><a href="https://api.whatsapp.com/send?phone=91<%= mobile%>">Link fo Whatsapp</a></p>
-    <p><a href="tel:+91<%= mobile%>">Link for Call</a></p>
-    <p><a href="mailto:<%= email%>">Link for Mail</a></p>
-
-
 
     </div>
 </body>
